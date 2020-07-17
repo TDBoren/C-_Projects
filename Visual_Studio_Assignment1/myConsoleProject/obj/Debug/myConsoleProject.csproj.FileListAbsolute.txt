@@ -1,0 +1,7 @@
+E:\C#_Projects\Visual_Studio_Assignment1\myConsoleProject\bin\Debug\myConsoleProject.exe.config
+E:\C#_Projects\Visual_Studio_Assignment1\myConsoleProject\bin\Debug\myConsoleProject.exe
+E:\C#_Projects\Visual_Studio_Assignment1\myConsoleProject\bin\Debug\myConsoleProject.pdb
+E:\C#_Projects\Visual_Studio_Assignment1\myConsoleProject\obj\Debug\myConsoleProject.csprojAssemblyReference.cache
+E:\C#_Projects\Visual_Studio_Assignment1\myConsoleProject\obj\Debug\myConsoleProject.csproj.CoreCompileInputs.cache
+E:\C#_Projects\Visual_Studio_Assignment1\myConsoleProject\obj\Debug\myConsoleProject.exe
+E:\C#_Projects\Visual_Studio_Assignment1\myConsoleProject\obj\Debug\myConsoleProject.pdb
