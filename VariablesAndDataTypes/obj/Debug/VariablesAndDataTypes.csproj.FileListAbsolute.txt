@@ -1,0 +1,7 @@
+E:\C#_Projects\VariablesAndDataTypes\bin\Debug\VariablesAndDataTypes.exe.config
+E:\C#_Projects\VariablesAndDataTypes\bin\Debug\VariablesAndDataTypes.exe
+E:\C#_Projects\VariablesAndDataTypes\bin\Debug\VariablesAndDataTypes.pdb
+E:\C#_Projects\VariablesAndDataTypes\obj\Debug\VariablesAndDataTypes.csprojAssemblyReference.cache
+E:\C#_Projects\VariablesAndDataTypes\obj\Debug\VariablesAndDataTypes.csproj.CoreCompileInputs.cache
+E:\C#_Projects\VariablesAndDataTypes\obj\Debug\VariablesAndDataTypes.exe
+E:\C#_Projects\VariablesAndDataTypes\obj\Debug\VariablesAndDataTypes.pdb
