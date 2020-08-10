@@ -1,0 +1,7 @@
+E:\C#_Projects\Loop_Assignment_While\bin\Debug\Loop_Assignment_While.exe.config
+E:\C#_Projects\Loop_Assignment_While\bin\Debug\Loop_Assignment_While.exe
+E:\C#_Projects\Loop_Assignment_While\bin\Debug\Loop_Assignment_While.pdb
+E:\C#_Projects\Loop_Assignment_While\obj\Debug\Loop_Assignment_While.csprojAssemblyReference.cache
+E:\C#_Projects\Loop_Assignment_While\obj\Debug\Loop_Assignment_While.csproj.CoreCompileInputs.cache
+E:\C#_Projects\Loop_Assignment_While\obj\Debug\Loop_Assignment_While.exe
+E:\C#_Projects\Loop_Assignment_While\obj\Debug\Loop_Assignment_While.pdb
