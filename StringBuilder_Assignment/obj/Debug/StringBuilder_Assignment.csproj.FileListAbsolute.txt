@@ -1,0 +1,7 @@
+C:\Users\Troy\source\repos\StringBuilder_Assignment\bin\Debug\StringBuilder_Assignment.exe.config
+C:\Users\Troy\source\repos\StringBuilder_Assignment\bin\Debug\StringBuilder_Assignment.exe
+C:\Users\Troy\source\repos\StringBuilder_Assignment\bin\Debug\StringBuilder_Assignment.pdb
+C:\Users\Troy\source\repos\StringBuilder_Assignment\obj\Debug\StringBuilder_Assignment.csprojAssemblyReference.cache
+C:\Users\Troy\source\repos\StringBuilder_Assignment\obj\Debug\StringBuilder_Assignment.csproj.CoreCompileInputs.cache
+C:\Users\Troy\source\repos\StringBuilder_Assignment\obj\Debug\StringBuilder_Assignment.exe
+C:\Users\Troy\source\repos\StringBuilder_Assignment\obj\Debug\StringBuilder_Assignment.pdb
