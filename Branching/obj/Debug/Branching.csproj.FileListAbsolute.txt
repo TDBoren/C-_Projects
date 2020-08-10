@@ -1,0 +1,7 @@
+E:\C#_Projects\Branching\bin\Debug\Branching.exe.config
+E:\C#_Projects\Branching\bin\Debug\Branching.exe
+E:\C#_Projects\Branching\bin\Debug\Branching.pdb
+E:\C#_Projects\Branching\obj\Debug\Branching.csprojAssemblyReference.cache
+E:\C#_Projects\Branching\obj\Debug\Branching.csproj.CoreCompileInputs.cache
+E:\C#_Projects\Branching\obj\Debug\Branching.exe
+E:\C#_Projects\Branching\obj\Debug\Branching.pdb
