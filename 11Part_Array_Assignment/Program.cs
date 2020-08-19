@@ -37,7 +37,7 @@ namespace _11Part_Array_Assignment
             }
             Console.ReadLine();
 
-            // Assignment part 6 - 8
+            // Assignment part 6 - 10
             List<string> space = new List<string> { "planets", "stars", "comets", "shuttle" };
             for (int n = 0; n < space.Count; n++)
             {
@@ -46,39 +46,43 @@ namespace _11Part_Array_Assignment
             Console.ReadLine();
             Console.WriteLine("Please choose an item from the list.");
             string userInput = Console.ReadLine();
+            bool matches = false;
             foreach (string n in space)
             {
                 if (userInput == n)
                 {
-                    Console.WriteLine("You have chosen " + userInput);
-                }
-                else 
-                {
-                    if (userInput != n)
-                    {
-                        Console.WriteLine("You did not select an item from the list.");
-                    }    
+                    matches = true;   
                 }
             }
-            
-            List<string> pets = new List<string>();
-            pets.Add("a bird");
-            pets.Add("a horse");
-            pets.Add("a dog");
-            pets.Add("a cat");
-            pets.Add("a turtle");
-            pets.Add("a cat");
-
-            for (int n = 0; n < pets.Count; n++)
+            if (matches)
             {
-                Console.WriteLine("Enter {0} to select {1}", n, pets[n]);
+                Console.WriteLine("You have chosen " + userInput);
             }
-            string numberChoice = Console.ReadLine();
-            int c = int.Parse(numberChoice);
-            Console.WriteLine("You have selected {1} for your pet.\nThank you.", c, pets[c]);
-            Console.ReadLine();
+            else
+            {
+                Console.WriteLine("You did not select an item from the list.");
+            }
 
+            // Assignment part 11
+            List<string> pets = new List<string>();
+            int cat = 0;
+            pets.Add("bird");
+            pets.Add("horse");
+            pets.Add("dog");
+            pets.Add("cat");
+            pets.Add("turtle");
+            pets.Add("cat");
 
+            foreach (string p in pets)
+            {
+                Console.WriteLine(p);
+            }
+            foreach (string p in pets)
+                if (p == "cat")
+                {
+                    cat++;
+                }
+            Console.WriteLine("There were " + cat + " cats in the list");
             Console.ReadLine();
         }
     }
