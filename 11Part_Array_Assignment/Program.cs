@@ -37,52 +37,77 @@ namespace _11Part_Array_Assignment
             }
             Console.ReadLine();
 
-            // Assignment part 6 - 10
+            // Assignment part 6 - 8
             List<string> space = new List<string> { "planets", "stars", "comets", "shuttle" };
             for (int n = 0; n < space.Count; n++)
             {
                 Console.WriteLine(space[n]);
             }
             Console.ReadLine();
-            Console.WriteLine("Please choose an item from the list.");
-            string userInput = Console.ReadLine();
             bool matches = false;
-            foreach (string n in space)
+            while (!matches)
             {
-                if (userInput == n)
+                Console.WriteLine("Please choose an item from the list.");
+                string userInput = Console.ReadLine();
+ 
+                foreach (string n in space)
                 {
-                    matches = true;   
+                    if (userInput == n)
+                    {
+                        matches = true;   
+                    }
+                }
+                if (matches)
+                {
+                    Console.WriteLine("You have chosen " + userInput);
+                }
+                else
+                {
+                    Console.WriteLine("You did not select an item from the list.");
                 }
             }
-            if (matches)
+            // Assignment part 9 -10
+            List<string> gender = new List<string> { "m", "f", "m", "m", "m", "f", "f", "m", "m", "f", "n/a" }; 
+            Console.WriteLine("Please choose either male or female by typing an m or f.");
+            string choice = Console.ReadLine();
+
+            for (int g = 0; g < gender.Count; g++)
             {
-                Console.WriteLine("You have chosen " + userInput);
+                if (choice == gender[g])
+                {
+                    Console.WriteLine(" You have chosen gender " + gender[g] + ".  That is located at index " + g);
+                }
             }
-            else
+            if (!gender.Contains(choice))
             {
-                Console.WriteLine("You did not select an item from the list.");
+                Console.WriteLine("You did not choose m or f.");
             }
 
             // Assignment part 11
             List<string> pets = new List<string>();
-            int cat = 0;
+            List<string> duplicatePets = new List<string>();
             pets.Add("bird");
             pets.Add("horse");
             pets.Add("dog");
             pets.Add("cat");
             pets.Add("turtle");
             pets.Add("cat");
+            pets.Add("horse");
 
             foreach (string p in pets)
             {
                 Console.WriteLine(p);
             }
             foreach (string p in pets)
-                if (p == "cat")
+                if (duplicatePets.Contains(p))
                 {
-                    cat++;
+                    Console.WriteLine(p + " is already in the list");
                 }
-            Console.WriteLine("There were " + cat + " cats in the list");
+                else
+                {
+                    duplicatePets.Add(p);
+                    Console.WriteLine(p + " is not a duplicate.");
+                }
             Console.ReadLine();
         }
     }
