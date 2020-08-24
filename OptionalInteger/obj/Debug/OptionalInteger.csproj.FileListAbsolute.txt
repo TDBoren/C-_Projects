@@ -1,0 +1,7 @@
+E:\C#_Projects\OptionalInteger\bin\Debug\OptionalInteger.exe.config
+E:\C#_Projects\OptionalInteger\bin\Debug\OptionalInteger.exe
+E:\C#_Projects\OptionalInteger\bin\Debug\OptionalInteger.pdb
+E:\C#_Projects\OptionalInteger\obj\Debug\OptionalInteger.csprojAssemblyReference.cache
+E:\C#_Projects\OptionalInteger\obj\Debug\OptionalInteger.csproj.CoreCompileInputs.cache
+E:\C#_Projects\OptionalInteger\obj\Debug\OptionalInteger.exe
+E:\C#_Projects\OptionalInteger\obj\Debug\OptionalInteger.pdb

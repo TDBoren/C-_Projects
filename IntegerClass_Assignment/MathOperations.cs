@@ -24,6 +24,5 @@ namespace IntegerClass_Assignment
         {
             return IntegerM / 5;
         }
-
     }
 }

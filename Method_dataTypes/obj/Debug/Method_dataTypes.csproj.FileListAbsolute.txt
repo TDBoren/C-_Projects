@@ -1,0 +1,7 @@
+E:\C#_Projects\Method_dataTypes\bin\Debug\Method_dataTypes.exe.config
+E:\C#_Projects\Method_dataTypes\bin\Debug\Method_dataTypes.exe
+E:\C#_Projects\Method_dataTypes\bin\Debug\Method_dataTypes.pdb
+E:\C#_Projects\Method_dataTypes\obj\Debug\Method_dataTypes.csprojAssemblyReference.cache
+E:\C#_Projects\Method_dataTypes\obj\Debug\Method_dataTypes.csproj.CoreCompileInputs.cache
+E:\C#_Projects\Method_dataTypes\obj\Debug\Method_dataTypes.exe
+E:\C#_Projects\Method_dataTypes\obj\Debug\Method_dataTypes.pdb
