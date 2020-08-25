@@ -9,17 +9,17 @@ namespace Method_dataTypes
     class DataTypes
     {
         // part 1
-        public static int Add(int IntegerA)
+        public static int Math(int IntegerA)
         {
             return IntegerA + 100;
         }
         // part 3
-        public static decimal Divide(decimal DecimalD)
+        public static decimal Math(decimal DecimalD)
         {
             return (DecimalD / 10);
         }
         // part 5
-        public static int Multiply(string StringS)
+        public static int Math(string StringS)
         {
             var IntegerS = Convert.ToInt32(StringS);
             IntegerS = IntegerS *10;

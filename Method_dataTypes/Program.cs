@@ -18,18 +18,18 @@ namespace Method_dataTypes
             string StringS = "4000";
 
             // part 2
-            int resultA = DataTypes.Add(IntegerA);
+            int resultA = DataTypes.Math(IntegerA);
             Console.WriteLine("This in an integer " + resultA);
             Console.ReadLine();
 
             // part 4
-            decimal resultS = DataTypes.Divide(DecimalD);
+            decimal resultS = DataTypes.Math(DecimalD);
             int IntegerD = Convert.ToInt32(resultS);
             Console.WriteLine("This is a decimal converted to an integer " + IntegerD);
             Console.ReadLine();
 
             // part 6
-            int resultM = DataTypes.Multiply(StringS);
+            int resultM = DataTypes.Math(StringS);
             Console.WriteLine(resultM);
             Console.ReadLine();
         }
