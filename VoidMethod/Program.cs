@@ -10,10 +10,9 @@ namespace VoidMethod
     {
         static void Main(string[] args)
         {
-            int Integer1 = 400;
-            int Integer2 = 1000;
-            int Integer3 = Void_Method.VoidMethod(Integer1, Integer2);
-            Console.WriteLine("This in an integer " + Integer3);
+            int Int1 = 5000;
+            int Int2 = 500;
+            Void_Method.VoidMethod(Integer1: Int1, Integer2: Int2);
             Console.ReadLine();
         }
     }
