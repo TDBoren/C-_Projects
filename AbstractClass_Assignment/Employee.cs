@@ -13,22 +13,17 @@ namespace AbstractClass_Assignment
             throw new NotImplementedException();
         }
 
-        internal static void SayName(string firstName, string lastName)
+        public static void SayName(string firstName, string lastName)
         {
             Console.WriteLine(firstName);
             Console.WriteLine(lastName);
             Console.ReadLine();
         }
 
-        internal static void Quit()
+        public void Quit()
         {
             Console.WriteLine("I quit!");
             Console.ReadLine();
-        }
-
-        public void Quit(Employee employee)
-        {
-            throw new NotImplementedException();
         }
     }
 }

@@ -13,8 +13,8 @@ namespace AbstractClass_Assignment
             string firstName = "Sample";
             string lastName = "Student";
             Employee.SayName(firstName, lastName);
-
-            Employee.Quit();
+            IQuittable Iquit = new Employee();
+            Iquit.Quit();
         }
     }
 }
