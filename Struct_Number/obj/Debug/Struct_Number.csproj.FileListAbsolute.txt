@@ -1,0 +1,7 @@
+E:\C#_Projects\Struct_Number\bin\Debug\Struct_Number.exe.config
+E:\C#_Projects\Struct_Number\bin\Debug\Struct_Number.exe
+E:\C#_Projects\Struct_Number\bin\Debug\Struct_Number.pdb
+E:\C#_Projects\Struct_Number\obj\Debug\Struct_Number.csprojAssemblyReference.cache
+E:\C#_Projects\Struct_Number\obj\Debug\Struct_Number.csproj.CoreCompileInputs.cache
+E:\C#_Projects\Struct_Number\obj\Debug\Struct_Number.exe
+E:\C#_Projects\Struct_Number\obj\Debug\Struct_Number.pdb
