@@ -1,0 +1,7 @@
+E:\C#_Projects\DaysOfWeek_Enum_Assignment\bin\Debug\DaysOfWeek_Enum_Assignment.exe.config
+E:\C#_Projects\DaysOfWeek_Enum_Assignment\bin\Debug\DaysOfWeek_Enum_Assignment.exe
+E:\C#_Projects\DaysOfWeek_Enum_Assignment\bin\Debug\DaysOfWeek_Enum_Assignment.pdb
+E:\C#_Projects\DaysOfWeek_Enum_Assignment\obj\Debug\DaysOfWeek_Enum_Assignment.csprojAssemblyReference.cache
+E:\C#_Projects\DaysOfWeek_Enum_Assignment\obj\Debug\DaysOfWeek_Enum_Assignment.csproj.CoreCompileInputs.cache
+E:\C#_Projects\DaysOfWeek_Enum_Assignment\obj\Debug\DaysOfWeek_Enum_Assignment.exe
+E:\C#_Projects\DaysOfWeek_Enum_Assignment\obj\Debug\DaysOfWeek_Enum_Assignment.pdb
