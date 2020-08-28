@@ -1,0 +1,7 @@
+E:\C#_Projects\GenericParameter_Assignment\bin\Debug\GenericParameter_Assignment.exe.config
+E:\C#_Projects\GenericParameter_Assignment\bin\Debug\GenericParameter_Assignment.exe
+E:\C#_Projects\GenericParameter_Assignment\bin\Debug\GenericParameter_Assignment.pdb
+E:\C#_Projects\GenericParameter_Assignment\obj\Debug\GenericParameter_Assignment.csprojAssemblyReference.cache
+E:\C#_Projects\GenericParameter_Assignment\obj\Debug\GenericParameter_Assignment.csproj.CoreCompileInputs.cache
+E:\C#_Projects\GenericParameter_Assignment\obj\Debug\GenericParameter_Assignment.exe
+E:\C#_Projects\GenericParameter_Assignment\obj\Debug\GenericParameter_Assignment.pdb
