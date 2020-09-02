@@ -1,0 +1,7 @@
+E:\C#_Projects\AppLog_Assignment\bin\Debug\AppLog_Assignment.exe.config
+E:\C#_Projects\AppLog_Assignment\bin\Debug\AppLog_Assignment.exe
+E:\C#_Projects\AppLog_Assignment\bin\Debug\AppLog_Assignment.pdb
+E:\C#_Projects\AppLog_Assignment\obj\Debug\AppLog_Assignment.csprojAssemblyReference.cache
+E:\C#_Projects\AppLog_Assignment\obj\Debug\AppLog_Assignment.csproj.CoreCompileInputs.cache
+E:\C#_Projects\AppLog_Assignment\obj\Debug\AppLog_Assignment.exe
+E:\C#_Projects\AppLog_Assignment\obj\Debug\AppLog_Assignment.pdb
