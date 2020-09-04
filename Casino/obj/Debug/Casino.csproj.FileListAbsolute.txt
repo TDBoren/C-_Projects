@@ -1,0 +1,6 @@
+E:\C#_Projects\Casino\bin\Debug\Casino.dll
+E:\C#_Projects\Casino\bin\Debug\Casino.pdb
+E:\C#_Projects\Casino\obj\Debug\Casino.csprojAssemblyReference.cache
+E:\C#_Projects\Casino\obj\Debug\Casino.csproj.CoreCompileInputs.cache
+E:\C#_Projects\Casino\obj\Debug\Casino.dll
+E:\C#_Projects\Casino\obj\Debug\Casino.pdb

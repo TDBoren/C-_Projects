@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -13,7 +14,7 @@ namespace LambdaExpression_Assignment
     static void Main(string[] args)
         {
         // Create a list of Employees
-        var Employees = new List<Employee>();
+        List<Employee> Employees = new List<Employee>();
             {
                 // Add Employees to the list.
                 Employees.Add(new Employee() { EmployeeFirstName = "Sarah", EmployeeLastName = "McConner", EmployeeId = 1 });
@@ -39,14 +40,19 @@ namespace LambdaExpression_Assignment
             {
                 Console.WriteLine(RepeatEmployees.EmployeeId + " " + RepeatEmployees.EmployeeFirstName + " " + RepeatEmployees.EmployeeLastName);
             }
-            foreach (Employee employee in Employees.FindAll(j => j.EmployeeFirstName == "Joe"))
+            List<Employee> newEmployeeList = Employees.Where(fn => fn.EmployeeFirstName == "Joe").ToList();
             {
-                Console.WriteLine(employee.EmployeeId + " " + employee.EmployeeFirstName + " " + employee.EmployeeLastName);
-
+                foreach (var employee in newEmployeeList)
+                {
+                    Console.WriteLine(employee.EmployeeId + " " + employee.EmployeeFirstName + " " + employee.EmployeeLastName);
+                }
             }
-            foreach (Employee employee in Employees.FindAll(g => g.EmployeeId > 5))
+            List<Employee> newEmployeeList1 = Employees.Where(g => g.EmployeeId > 5).ToList();
             {
-                Console.WriteLine(employee.EmployeeId + " " + employee.EmployeeFirstName + " " + employee.EmployeeLastName);
+                foreach (var employee1 in newEmployeeList1)
+                {
+                    Console.WriteLine(employee1.EmployeeId + " " + employee1.EmployeeFirstName + " " + employee1.EmployeeLastName);
+                }
             }
             Console.ReadLine();
         }

@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using System.Configuration;
+using Casino;
+using Casino.TwentyOne;
 
 namespace TwentyOne
 {
@@ -12,24 +14,53 @@ namespace TwentyOne
     {
         static void Main(string[] args)
         {
-            // string text = "Here is some text."
-            // File.WriteAllText("C:\\Users\\jesse\\Logs\\log.txt", text);
-            // File.ReadAllText("C:\\Users\\jesse\\Logs\\log.txt");
-            Console.WriteLine("Welcome to the Grand Hotel and Casino!\nLet's start by telling me your name.");
+            const string casinoName = "Grand Hotel and Casino";
+
+            Console.WriteLine("Welcome to the {0}!\nLet's start by telling me your name.", casinoName);
             string playerName = Console.ReadLine();
-            Console.WriteLine("How much money did you bring today?");
-            int bank = Convert.ToInt32(Console.ReadLine());
+
+            bool validAnswer = false;
+            int bank = 0;
+            while (!validAnswer)
+            {
+                Console.WriteLine("And how much money did you bring today?");
+                validAnswer = int.TryParse(Console.ReadLine(), out bank);
+                if (!validAnswer)
+                {
+                    Console.WriteLine("Please enter digits only. No decimals.");
+                }
+            }
             Console.WriteLine("Hello, {0}. Would you like to join a game of 21 right now? ", playerName);
             string answer = Console.ReadLine().ToLower();
             if (answer == "yes" || answer == "yeah" || answer == "y" || answer == "ya")
             {
                 Player player = new Player(playerName, bank);
+                player.Id = Guid.NewGuid();
+                using (StreamWriter file = new StreamWriter(@"E:\C#_Programs\TwentyOneGame\log.txt", true))
+                {
+                    file.WriteLine(player.Id);
+                }
                 Game game = new TwentyOneGame();
                 game += player;
                 player.isActivelyPlaying = true;
                 while (player.isActivelyPlaying && player.Balance > 0)
                 {
-                    game.Play();
+                    try
+                    {
+                        game.Play();
+                    }
+                    catch (FraudException)
+                    {
+                        Console.WriteLine("Security! Kick this person out!");
+                        Console.ReadLine();
+                        return;
+                    }
+                    catch (Exception)
+                    {
+                        Console.WriteLine("An error occurred. Please contact you System Administrator.");
+                        Console.ReadLine();
+                        return;
+                    }
                 }
                 game -= player;
                 Console.WriteLine("Thank you for playing!");

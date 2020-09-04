@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Casino.Interfaces;
 
-namespace TwentyOne
+namespace Casino.TwentyOne
 {
     public class TwentyOneGame : Game, IWalkAway
     {
@@ -26,7 +27,21 @@ namespace TwentyOne
 
             foreach (Player player in Players)
             {
-                int bet = Convert.ToInt32(Console.ReadLine());
+                bool validAnswer = false;
+                int bet = 0;
+                while (!validAnswer)
+                {
+                    Console.WriteLine("Place your bet!");
+                    validAnswer = int.TryParse(Console.ReadLine(), out bet);
+                    if (!validAnswer)
+                    {
+                        Console.WriteLine("Please enter digits only, no decimals.");
+                    }
+                    if (bet < 0)
+                    {
+                        throw new FraudException();
+                    }
+                }
                 bool successfullyBet = player.Bet(bet);
                 if (!successfullyBet)
                 {
