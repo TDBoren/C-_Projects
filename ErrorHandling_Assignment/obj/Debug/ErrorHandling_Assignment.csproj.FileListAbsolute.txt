@@ -1,0 +1,7 @@
+E:\C#_Projects\ErrorHandling_Assignment\bin\Debug\ErrorHandling_Assignment.exe.config
+E:\C#_Projects\ErrorHandling_Assignment\bin\Debug\ErrorHandling_Assignment.exe
+E:\C#_Projects\ErrorHandling_Assignment\bin\Debug\ErrorHandling_Assignment.pdb
+E:\C#_Projects\ErrorHandling_Assignment\obj\Debug\ErrorHandling_Assignment.csprojAssemblyReference.cache
+E:\C#_Projects\ErrorHandling_Assignment\obj\Debug\ErrorHandling_Assignment.csproj.CoreCompileInputs.cache
+E:\C#_Projects\ErrorHandling_Assignment\obj\Debug\ErrorHandling_Assignment.exe
+E:\C#_Projects\ErrorHandling_Assignment\obj\Debug\ErrorHandling_Assignment.pdb
