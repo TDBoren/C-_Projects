@@ -33,13 +33,15 @@ namespace LambdaExpression_Assignment
             {
                 Console.WriteLine(employee.EmployeeId +" " + employee.EmployeeFirstName + " " + employee.EmployeeLastName);
             }
-        var Repeat = from e in Employees
-            where e.EmployeeFirstName == "Joe"
-            select e;
-        foreach (var RepeatEmployees in Repeat)
-            {
-                Console.WriteLine(RepeatEmployees.EmployeeId + " " + RepeatEmployees.EmployeeFirstName + " " + RepeatEmployees.EmployeeLastName);
-            }
+            List<Employee> JoeEmployees = new List<Employee>(Employees.FindAll("Joe"));
+        foreach (var employee in Employees)
+        {
+                if (Employees.Contains("Joe"))
+                {
+                    JoeEmployees.Add();
+                    Console.WriteLine(JoeEmployees.EmployeeId + " " + JoeEmployees.EmployeeFirstName + " " + JoeEmployees.EmployeeLastName);
+                }
+        }
             List<Employee> newEmployeeList = Employees.Where(fn => fn.EmployeeFirstName == "Joe").ToList();
             {
                 foreach (var employee in newEmployeeList)

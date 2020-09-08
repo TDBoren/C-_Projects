@@ -7,6 +7,8 @@ using System.IO;
 using System.Configuration;
 using Casino;
 using Casino.TwentyOne;
+using System.Data.SqlClient;
+using System.Data;
 
 namespace TwentyOne
 {
@@ -18,6 +20,20 @@ namespace TwentyOne
 
             Console.WriteLine("Welcome to the {0}!\nLet's start by telling me your name.", casinoName);
             string playerName = Console.ReadLine();
+            if (playerName.ToLower() == "admin")
+            {
+                List<ExceptionEntity> Exceptions = ReadExceptions();
+                foreach (var exception in Exceptions)
+                {
+                    Console.Write(exception.Id + " | ");
+                    Console.Write(exception.ExceptionType + " | ");
+                    Console.Write(exception.ExceptionMessage + " | ");
+                    Console.Write(exception.ExceptionTimeStamp + " | ");
+                    Console.WriteLine();
+                }
+                Console.Read();
+                return;
+            }
 
             bool validAnswer = false;
             int bank = 0;
@@ -36,7 +52,7 @@ namespace TwentyOne
             {
                 Player player = new Player(playerName, bank);
                 player.Id = Guid.NewGuid();
-                using (StreamWriter file = new StreamWriter(@"E:\C#_Programs\TwentyOneGame\log.txt", true))
+                using (StreamWriter file = new StreamWriter(@"E:\C#_Projects\TwentyOne\log.txt", true))
                 {
                     file.WriteLine(player.Id);
                 }
@@ -49,15 +65,17 @@ namespace TwentyOne
                     {
                         game.Play();
                     }
-                    catch (FraudException)
+                    catch (FraudException ex)
                     {
-                        Console.WriteLine("Security! Kick this person out!");
+                        Console.WriteLine(ex.Message);
+                        UpdateDbWithException(ex);
                         Console.ReadLine();
                         return;
                     }
-                    catch (Exception)
+                    catch (Exception ex)
                     {
                         Console.WriteLine("An error occurred. Please contact you System Administrator.");
+                        UpdateDbWithException(ex);
                         Console.ReadLine();
                         return;
                     }
@@ -67,22 +85,59 @@ namespace TwentyOne
             }
             Console.WriteLine("Feel free to look around the casino. Bye for now.");
             Console.Read();
+        }
 
-            //Deck deck = new Deck();
-            //int count = deck.Cards.Count(x => x.Face == Face.Ace);
-            //List<Card> newList = deck.Cards.Where(x => x.Face == Face.King).ToList();
-            //List<int> numberList = new List<int>() { 1, 2, 3, 535, 342, 23 };
-            //int sum = numberList.Where(x => x >20).Sum();
-            //Console.WriteLine(sum);
+        private static void UpdateDbWithException(Exception ex)
+        {
+            string connectionString = @"Data Source=(localdb)\ProjectsV13;Initial Catalog=TwentyOneGame;
+                                        Integrated Security=True;Connect Timeout=30;Encrypt=False;
+                                        TrustServerCertificate=True;ApplicationIntent=ReadWrite;
+                                        MultiSubnetFailover=False";
+            string queryString = @"INSERT INTO Exceptions (ExceptionType, ExceptionMessage, ExceptionTimeStamp) VALUES
+                                    (@ExceptionType, @ExceptionMessage, @ExceptionTimeStamp)";
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                SqlCommand command = new SqlCommand(queryString, connection);
+                command.Parameters.Add("@ExceptionType", SqlDbType.VarChar);
+                command.Parameters.Add("@ExceptionMessage", SqlDbType.VarChar);
+                command.Parameters.Add("@ExceptionTimeStamp", SqlDbType.DateTime);
 
-            //deck.Shuffle(3);
+                command.Parameters["@ExceptionType"].Value = ex.GetType().ToString();
+                command.Parameters["@ExceptionMessage"].Value = ex.Message;
+                command.Parameters["@ExceptionTimeStamp"].Value = DateTime.Now;
 
-            //foreach (Card card in deck.Cards)
-            //{
-            //    Console.WriteLine(card.Face + " of " + card.Suit);
-            //}
-            //Console.WriteLine(deck.Cards.Count);
-            //Console.ReadLine();
+                connection.Open();
+                command.ExecuteNonQuery();
+                connection.Close();
+            }
+        }
+        private static List<ExceptionEntity> ReadExceptions()
+        {
+            string connectionString = @"Data Source=(localdb)\ProjectsV13;Initial Catalog=TwentyOneGame;
+                                        Integrated Security=True;Connect Timeout=30;Encrypt=False;
+                                        TrustServerCertificate=True;ApplicationIntent=ReadWrite;
+                                        MultiSubnetFailover=False";
+            string queryString = @"Select Id, ExceptionType, ExceptionMessage, ExceptionTimeStamp From Exceptions";
+
+            List<ExceptionEntity> Exceptions = new List<ExceptionEntity>();
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                SqlCommand command = new SqlCommand(queryString, connection);
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    ExceptionEntity exception = new ExceptionEntity();
+                    exception.Id = Convert.ToInt32(reader["Id"]);
+                    exception.ExceptionType = reader["ExceptionType"].ToString();
+                    exception.ExceptionMessage = reader["ExceptionMessage"].ToString();
+                    exception.ExceptionTimeStamp = Convert.ToDateTime(reader["ExceptionTimeStamp"]);
+                    Exceptions.Add(exception);
+                }
+                connection.Close();
+            }
+            return Exceptions;
         }
     }
 }

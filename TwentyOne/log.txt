@@ -64,3 +64,155 @@ Jack of Hearts
 9/2/2020 10:17:54 AM
 Queen of Hearts
 
+9/5/2020 12:02:01 PM
+Nine of Spades
+
+9/5/2020 12:02:01 PM
+Four of Hearts
+
+9/5/2020 12:02:06 PM
+Ten of Clubs
+
+9/5/2020 12:02:13 PM
+Eight of Clubs
+
+9/5/2020 12:02:13 PM
+Seven of Diamonds
+
+9/5/2020 12:02:13 PM
+Three of Hearts
+
+9/5/2020 12:02:13 PM
+Four of Diamonds
+
+c9138a2e-dd26-46e2-b175-3482e8f790a6
+630989a9-fa59-46b9-9cb1-220d0a1e5ec1
+9/5/2020 12:21:46 PM
+Nine of Clubs
+
+9/5/2020 12:21:46 PM
+Jack of Diamonds
+
+9/5/2020 12:21:52 PM
+Eight of Clubs
+
+9/5/2020 12:21:56 PM
+Two of Diamonds
+
+9/5/2020 12:21:56 PM
+Six of Spades
+
+9/5/2020 12:21:56 PM
+Ten of Hearts
+
+9802dba8-4913-44f2-ad1c-4f03f01dcbed
+464dfc43-6404-47d4-8f0a-57a67a177963
+ec1455c2-f004-4c08-8f7e-5d2673a11f79
+02a9d438-4a81-469b-90a3-30409822a8b2
+9/5/2020 1:19:32 PM
+King of Hearts
+
+9/5/2020 1:19:32 PM
+Four of Diamonds
+
+9/5/2020 1:19:41 PM
+Seven of Spades
+
+9/5/2020 1:19:45 PM
+Five of Diamonds
+
+4c64bbed-04d6-4f1a-aeb0-3de393246f89
+dcb72dd1-b486-41e5-b960-3a1fc43b57f0
+6b9a8ea6-2459-458a-89ef-51ec02c59ec7
+0825e84f-a933-4546-997e-1759f887df5e
+38f8b617-cf8f-43b5-862b-388c841b3e2b
+cc3ffc2c-2141-46f9-9bf7-fee64c0243fb
+0cde9574-90d8-4ee5-9f1b-b2075cfc90d1
+25d0f322-523b-4350-b569-b23cee33b02e
+9/7/2020 9:05:48 AM
+Seven of Clubs
+
+9/7/2020 9:05:48 AM
+Five of Hearts
+
+9/7/2020 9:05:56 AM
+Nine of Clubs
+
+9/7/2020 9:06:04 AM
+King of Diamonds
+
+9/7/2020 9:06:12 AM
+Four of Clubs
+
+9/7/2020 9:06:12 AM
+Jack of Hearts
+
+9/7/2020 9:06:16 AM
+Ace of Clubs
+
+9/7/2020 9:06:21 AM
+Ten of Clubs
+
+9/7/2020 9:06:27 AM
+Queen of Hearts
+
+9/7/2020 9:06:34 AM
+Nine of Hearts
+
+9/7/2020 9:06:34 AM
+Three of Hearts
+
+9/7/2020 9:06:38 AM
+Seven of Clubs
+
+9/7/2020 9:06:44 AM
+Queen of Hearts
+
+9/7/2020 9:07:03 AM
+Five of Hearts
+
+9/7/2020 9:07:03 AM
+Seven of Spades
+
+9/7/2020 9:07:06 AM
+Six of Diamonds
+
+9/7/2020 9:07:08 AM
+Six of Clubs
+
+9/7/2020 9:07:18 AM
+Ace of Diamonds
+
+9/7/2020 9:07:18 AM
+Nine of Hearts
+
+9/7/2020 9:07:18 AM
+Jack of Spades
+
+9/7/2020 9:07:34 AM
+Five of Hearts
+
+9/7/2020 9:07:34 AM
+Three of Hearts
+
+9/7/2020 9:07:44 AM
+Eight of Clubs
+
+9/7/2020 9:07:47 AM
+Ace of Diamonds
+
+9/7/2020 9:08:00 AM
+Six of Clubs
+
+9/7/2020 9:08:11 AM
+Six of Spades
+
+9/7/2020 9:08:11 AM
+Nine of Clubs
+
+9/7/2020 9:08:11 AM
+Four of Diamonds
+
+9/7/2020 9:08:11 AM
+Ace of Spades
+

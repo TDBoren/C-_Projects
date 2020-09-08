@@ -10,8 +10,10 @@ namespace ConstVariable_Assignment
     {
         static void Main(string[] args)
         {
-            Dog dog1 = new Dog("Kirby");
-            Dog dog2 = new Dog("Jack", 16);
+            var mC = new ConstExample(11, 22);
+            Console.WriteLine("These are the variables " + ($"x = {mC.x}, y = {mC.y}") +"\nThese are the Constructors " + ($"C1 = {ConstExample.C1}, C2 = {ConstExample.C2}"));
+            Console.WriteLine("Press any key to exit.");
+            Console.ReadKey();
         }
     }
 }
