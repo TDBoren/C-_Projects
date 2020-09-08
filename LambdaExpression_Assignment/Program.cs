@@ -33,13 +33,13 @@ namespace LambdaExpression_Assignment
             {
                 Console.WriteLine(employee.EmployeeId +" " + employee.EmployeeFirstName + " " + employee.EmployeeLastName);
             }
-            List<Employee> JoeEmployees = new List<Employee>(Employees.FindAll("Joe"));
+            List<Employee> JoeEmployees = new List<Employee>();
         foreach (var employee in Employees)
         {
-                if (Employees.Contains("Joe"))
+                if (employee.EmployeeFirstName == "Joe")
                 {
-                    JoeEmployees.Add();
-                    Console.WriteLine(JoeEmployees.EmployeeId + " " + JoeEmployees.EmployeeFirstName + " " + JoeEmployees.EmployeeLastName);
+                    JoeEmployees.Add(employee);
+                    Console.WriteLine(employee.EmployeeId + " " + employee.EmployeeFirstName + " " + employee.EmployeeLastName);
                 }
         }
             List<Employee> newEmployeeList = Employees.Where(fn => fn.EmployeeFirstName == "Joe").ToList();

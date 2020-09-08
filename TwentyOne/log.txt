@@ -216,3 +216,58 @@ Four of Diamonds
 9/7/2020 9:08:11 AM
 Ace of Spades
 
+d6058c40-8f1b-454d-a2f5-c36f10df4c53
+9/8/2020 9:14:47 AM
+Ten of Hearts
+
+9/8/2020 9:14:47 AM
+Ten of Clubs
+
+9/8/2020 9:14:52 AM
+Ace of Clubs
+
+9/8/2020 9:14:57 AM
+Four of Spades
+
+9/8/2020 9:14:57 AM
+Four of Clubs
+
+9/8/2020 9:14:57 AM
+Nine of Clubs
+
+9/8/2020 9:15:03 AM
+Seven of Diamonds
+
+9/8/2020 9:15:03 AM
+Six of Diamonds
+
+9/8/2020 9:15:08 AM
+Six of Spades
+
+9/8/2020 9:15:13 AM
+Five of Spades
+
+9/8/2020 9:15:20 AM
+Three of Clubs
+
+9/8/2020 9:15:34 AM
+Three of Spades
+
+9/8/2020 9:15:34 AM
+Seven of Diamonds
+
+9/8/2020 9:15:37 AM
+Four of Hearts
+
+9/8/2020 9:15:42 AM
+Four of Diamonds
+
+9/8/2020 9:15:45 AM
+Ten of Diamonds
+
+9/8/2020 9:15:55 AM
+Three of Clubs
+
+9/8/2020 9:15:55 AM
+King of Diamonds
+
