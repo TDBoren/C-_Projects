@@ -50,6 +50,16 @@ namespace CarInsurance.Controllers
         {
             if (ModelState.IsValid)
             {
+                if (insuree.Quote > 50)
+                {
+                    _ = ModelState.IsValid;
+                }
+                int age = 0;
+                age = DateTime.Now.Year - DateOfBirth.Year;
+                if (DateTime.Now.DayOfYear < DateOfBirth.DayOfYear)
+                    age = age - 1;
+                return age;
+                }
                 db.Insurees.Add(insuree);
                 db.SaveChanges();
                 return RedirectToAction("Index");
@@ -58,7 +68,7 @@ namespace CarInsurance.Controllers
             return View(insuree);
         }
 
-        // GET: Insuree/Edit/5
+        // GET: Insuree/Edit/
         public ActionResult Edit(int? id)
         {
             if (id == null)
