@@ -1,0 +1,24 @@
+﻿@model IEnumerable<CarInsurance.Models.Insuree>
+
+@{
+  ViewBag.Title = "Admin";
+}
+
+<h2>Insurees</h2>
+
+<table class="table">
+  <tr>
+    <th>
+      @Html.DisplayNameFor(model => model.FirstName)
+    </th>
+    <th>
+      @Html.DisplayNameFor(model => model.LastName)
+    </th>
+    <th>
+      @Html.DisplayNameFor(model => model.EmailAddress)
+    </th>
+    <th>
+      @Html.DisplayNameFor(model => model.Quote)
+    </th>
+  </tr>
+</table>

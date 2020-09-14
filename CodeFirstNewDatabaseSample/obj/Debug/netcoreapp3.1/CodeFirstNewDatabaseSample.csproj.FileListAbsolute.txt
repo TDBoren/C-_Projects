@@ -1,0 +1,5 @@
+E:\C#_Projects\CodeFirstNewDatabaseSample\bin\Debug\netcoreapp3.1\CodeFirstNewDatabaseSample.exe
+E:\C#_Projects\CodeFirstNewDatabaseSample\obj\Debug\netcoreapp3.1\CodeFirstNewDatabaseSample.csprojAssemblyReference.cache
+E:\C#_Projects\CodeFirstNewDatabaseSample\obj\Debug\netcoreapp3.1\CodeFirstNewDatabaseSample.AssemblyInfoInputs.cache
+E:\C#_Projects\CodeFirstNewDatabaseSample\obj\Debug\netcoreapp3.1\CodeFirstNewDatabaseSample.AssemblyInfo.cs
+E:\C#_Projects\CodeFirstNewDatabaseSample\obj\Debug\netcoreapp3.1\CodeFirstNewDatabaseSample.csproj.CoreCompileInputs.cache

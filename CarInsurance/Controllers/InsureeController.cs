@@ -50,16 +50,52 @@ namespace CarInsurance.Controllers
         {
             if (ModelState.IsValid)
             {
-                if (insuree.Quote > 50)
+                insuree.Quote = 50;
+                DateTime dateOfBirth18 = insuree.DateOfBirth;
+                int age18 = DateTime.Now.Year - dateOfBirth18.Year;
+                if (age18 <= 18)
                 {
-                    _ = ModelState.IsValid;
+                    insuree.Quote += 100;
                 }
-                int age = 0;
-                age = DateTime.Now.Year - DateOfBirth.Year;
-                if (DateTime.Now.DayOfYear < DateOfBirth.DayOfYear)
-                    age = age - 1;
-                return age;
+                DateTime dateOfBirth1925 = insuree.DateOfBirth;
+                int age1925 = DateTime.Now.Year - dateOfBirth1925.Year;
+                if (age1925 > 18 && age1925 <= 25)
+                {
+                    insuree.Quote += 50;
                 }
+                DateTime dateOfBirth26 = insuree.DateOfBirth;
+                int age26 = DateTime.Now.Year - dateOfBirth26.Year;
+                if (age26 > 25)
+                {
+                    insuree.Quote += 25;
+                }
+                int currentYear = DateTime.Now.Year;
+                int car2000 = currentYear - insuree.CarYear;
+                if (car2000 < 2000  || car2000 > 2015)
+                {
+                    insuree.Quote += 25;
+                }
+                if (insuree.CarMake == "Porsche")
+                {
+                    insuree.Quote += 25;
+                }
+                if (insuree.CarMake == "Porsche" && insuree.CarModel == "911 Carrera")
+                {
+                    insuree.Quote += 25;
+                }
+                for (int i = 1; i <= insuree.SpeedingTickets; i++)
+                {
+                    insuree.Quote += 10;
+                }
+                if (insuree.DUI == true) 
+                {
+                    insuree.Quote += (insuree.Quote * 25) / 100;
+                }
+                if (insuree.CoverageType == true)
+                {
+                    insuree.Quote += (insuree.Quote * 50) / 100;
+                }
+                
                 db.Insurees.Add(insuree);
                 db.SaveChanges();
                 return RedirectToAction("Index");
