@@ -1,0 +1,7 @@
+C:\Users\Troy\source\repos\Jens_String_Builder\bin\Debug\Jens_String_Builder.exe.config
+C:\Users\Troy\source\repos\Jens_String_Builder\bin\Debug\Jens_String_Builder.exe
+C:\Users\Troy\source\repos\Jens_String_Builder\bin\Debug\Jens_String_Builder.pdb
+C:\Users\Troy\source\repos\Jens_String_Builder\obj\Debug\Jens_String_Builder.csprojAssemblyReference.cache
+C:\Users\Troy\source\repos\Jens_String_Builder\obj\Debug\Jens_String_Builder.csproj.CoreCompileInputs.cache
+C:\Users\Troy\source\repos\Jens_String_Builder\obj\Debug\Jens_String_Builder.exe
+C:\Users\Troy\source\repos\Jens_String_Builder\obj\Debug\Jens_String_Builder.pdb
