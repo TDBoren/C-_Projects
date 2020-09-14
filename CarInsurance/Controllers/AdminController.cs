@@ -10,12 +10,13 @@ namespace CarInsurance.Views.Admin
 {
     public class AdminController : Controller
     {
+        private InsuranceEntities db = new InsuranceEntities();
         // GET: Admin
         public ActionResult Index()
         {
-            return View();
+            return View(db.Insurees.ToList());
         }
-        private readonly InsuranceEntities db = new InsuranceEntities();
+        
         // GET: Insurees
         public ActionResult Details(int? id)
         {
